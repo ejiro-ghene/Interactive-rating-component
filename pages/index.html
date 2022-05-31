@@ -4,34 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="pages/rating.css">
+  <link rel="stylesheet" href="rating.css">
+  <link href="../output.css" rel="stylesheet">
   
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="body w-full h-full">
   <main>
     <!-- rating card -->
-    <div class="rating-card">
-      <!-- star icon -->
-      <img src="" alt="">
+    <div class="rating-card max-w-sm md:m-auto overflow-hidden rounded-3xl w-full h-ffull mt-36">
+        <!-- star icon -->
+      <img class="star-icon rounded-full shadow-lg py-3 px-3 mx-6 mt-8 mb-5 w-9" src="../images/icon-star.svg" alt="">
       <!-- text -->
-      <h1>How did we do?</h1>
-      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="px-6">
+        <h1 class="font-semibold text-2xl text-white pb-3">How did we do?</h1>
+      <p class="rate-text text-sm">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      
       <!-- rating numbers -->
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
-      <!-- sumbit button -->
-      <button>Submit</button>
+      <div class=" text-white">
+        <button class="rate-buttons rounded-full text-xs rate-text py-4 px-5 mx-2 my-5">1</button>
+      <button class="rate-buttons  rounded-full text-xs rate-text py-4 px-5 mx-2 my-5">2</button>
+      <button class="rate-buttons  rounded-full text-xs rate-text py-4 px-5 mx-2 my-5">3</button>
+      <button class="rate-buttons  rounded-full text-xs rate-text py-4 px-5 mx-2 my-5">4</button>
+      <button class="rate-buttons  rounded-full text-xs rate-text py-4 px-5 mx-2 my-5">5</button>
+      </div>
+     
     </div>
+     <!-- sumbit button -->
+     <button class="font-semibold rating-submit bg-white rounded-full w-80 h-10 ml-8 mt-4 mb-8">SUBMIT</button>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="attribution mt-32">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ukiwe Stephanie</a>.
+    
   </main>
   <!-- Rating state start -->
 
@@ -39,25 +47,12 @@
 
   <!-- Rating state end -->
 
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
 
 
   <!-- JAVASCRIPT -->
-  <script src="pages/myRating.js"></script>
+  <script src="myRating.js"></script>
 </body>
 </html>
