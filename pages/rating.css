@@ -9,6 +9,7 @@
 
 .rating-card {
     background-color: #262e38;
+    height: 60vh;
 }
 
 .star-icon {
@@ -17,14 +18,24 @@
 
 .rate-text {
     color: #959eac;
+    /* font-size: 0.76rem; */
 }
 
 .rate-buttons {
 background-color: #7c87981a;
 }
 
+.rate-buttons:hover {
+background-color: #fb7413;
+}
+
 .rating-submit {
     color: #fb7413;
+}
+
+.rating-submit:hover {
+    background-color: #fb7413;
+    color: #ffffff;
 }
 
 .attribution { 

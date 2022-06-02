@@ -12,33 +12,39 @@
 <body class="body w-full h-full">
   <main>
     <!-- rating card -->
-    <div class="rating-card max-w-sm md:m-auto overflow-hidden rounded-3xl w-full h-ffull mt-36">
+    <div class="rating-card max-w-sm m-auto overflow-hidden rounded-2xl w-11/12 md:w-full md:h-full mt-20 md:mt-28">
+      
         <!-- star icon -->
-      <img class="star-icon rounded-full shadow-lg py-3 px-3 mx-6 mt-8 mb-5 w-9" src="../images/icon-star.svg" alt="">
+      <img class="star-icon rounded-full shadow-lg py-3 px-3 mx-5 mt-4 md:py-3 md:px-3  md:mx-6 md:mt-8 mb-2 md:mb-5 w-8 md:w-9" src="../images/icon-star.svg" alt="r-icon">
+
       <!-- text -->
-      <div class="px-6">
-        <h1 class="font-semibold text-2xl text-white pb-3">How did we do?</h1>
-      <p class="rate-text text-sm">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="px-5 md:px-6">
+        <h1 class="font-semibold text-xl md:text-2xl text-white mb-3 md:pb-3">How did we do?</h1>
+      <p class="rate-text md:text-sm">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       
       <!-- rating numbers -->
       <div class=" text-white">
-        <button class="rate-buttons rounded-full text-xs rate-text py-4 px-5 mx-2 my-5">1</button>
-      <button class="rate-buttons  rounded-full text-xs rate-text py-4 px-5 mx-2 my-5">2</button>
-      <button class="rate-buttons  rounded-full text-xs rate-text py-4 px-5 mx-2 my-5">3</button>
-      <button class="rate-buttons  rounded-full text-xs rate-text py-4 px-5 mx-2 my-5">4</button>
-      <button class="rate-buttons  rounded-full text-xs rate-text py-4 px-5 mx-2 my-5">5</button>
+        <button class="rate-buttons rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" onclick="document.location.href='thankyou.html';">1</button>
+      <button class="rate-buttons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" onclick="document.location.href='thankyou.html';">2</button>
+      <button class="rate-buttons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" onclick="document.location.href='thankyou.html';">3</button>
+      <button class="rate-buttons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" onclick="document.location.href='thankyou.html';">4</button>
+      <button class="rate-buttons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" onclick="document.location.href='thankyou.html';">5</button>
+      </div>
+    </div>
+
+     <!-- sumbit button -->
+     <div class="r-button flex justify-center">
+       <button class="font-semibold rating-submit bg-white rounded-full w-11/12 md:w-10/12 h-12 md:h-14 mt-14 mb-6 md:mb-8">SUBMIT</button>
       </div>
      
-    </div>
-     <!-- sumbit button -->
-     <button class="font-semibold rating-submit bg-white rounded-full w-80 h-10 ml-8 mt-4 mb-8">SUBMIT</button>
       </div>
     </div>
 
     <!-- FOOTER -->
-    <div class="attribution mt-32">
+    <div class="attribution mt-20 md:mt-28">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Ukiwe Stephanie</a>.
+    </div>
     
   </main>
   <!-- Rating state start -->
