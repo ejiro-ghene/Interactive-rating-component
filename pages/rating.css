@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* /pseudo class */
 .display{
     display: none;
   }
@@ -42,6 +43,7 @@ background-color: #fb7413;
     color: #ffffff;
 }
 
+/* footer */
 .attribution { 
     font-size: 11px; 
     text-align: center;
@@ -52,6 +54,7 @@ background-color: #fb7413;
     color: #fb7413; 
 }
 
+/* span text */
 .current_rating {
     background-color: #7c87981a;
     color: #fb7413;

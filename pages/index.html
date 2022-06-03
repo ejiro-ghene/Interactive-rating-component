@@ -10,9 +10,9 @@
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body class="body w-full h-full">
-  <main>
+  <section id="rateCard">
     <!-- rating card -->
-    <div id="rateCard" class="rating-card max-w-sm m-auto overflow-hidden rounded-2xl w-11/12 md:w-full md:h-full mt-20 md:mt-28">
+    <div  class="rating-card max-w-sm m-auto overflow-hidden rounded-2xl w-11/12 md:w-full md:h-full mt-20 md:mt-28">
       
         <!-- star icon -->
       <img class="star-icon rounded-full shadow-lg py-3 px-3 mx-5 mt-4 md:py-3 md:px-3  md:mx-6 md:mt-8 mb-2 md:mb-5 w-8 md:w-9" src="../images/icon-star.svg" alt="r-icon">
@@ -34,21 +34,17 @@
 
      <!-- sumbit button -->
      <div class="r-button flex justify-center">
-       <button class="font-semibold rating-submit bg-white rounded-full w-11/12 md:w-10/12 h-12 md:h-14 mt-14 mb-6 md:mb-8">SUBMIT</button>
+       <button class="font-semibold rating-submit bg-white rounded-full w-11/12 md:w-10/12 h-12 md:h-14 mt-5 md:mt-8 md:mb-8">SUBMIT</button>
       </div>
      
       </div>
-<div class="attribution mt-20 md:mt-28">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Ukiwe Stephanie</a>.
-    </div>
-      <!-- FOOTER -->
-    
-    </div>
 
-    
-    
-  </main>
+      <!-- FOOTER -->
+      <div class="attribution mt-20 md:mt-28">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Ukiwe Stephanie</a>.
+      </div>
+  </section>
 
 
 
@@ -58,8 +54,8 @@
 
 
   <!-- thankyou -->
-<section class="thankyou-card" id="thankYou">
-        <div class="thankyouClass  max-w-sm m-auto overflow-hidden rounded-2xl w-11/12 md:w-full md:h-full mt-20 md:mt-28">
+<section id="thankYou">
+        <div class="thankyouClass max-w-sm m-auto overflow-hidden rounded-2xl w-11/12 md:w-full md:h-full mt-20 md:mt-28">
 
           <!-- thank you icon -->
           <div class="t-img flex justify-center py-10">
@@ -67,8 +63,8 @@
           </div>
           
           <!-- text -->
-          <p class="current_rating rounded-full flex justify-center w-auto mx-16 py-1 md:mx-24 md:py-1"> You selected <span id="rating-value"></span></p>
-
+          <p class="current_rating rounded-full flex justify-center w-auto mx-16 py-1 md:mx-24 md:py-1">  <span id="rating-value"></span></p>
+          <!-- thank you note -->
           <div class="px-5 md:px-6 text-center">
             <h1 class="font-semibold text-xl md:text-2xl text-white py-4 md:pt-8">Thank you!</h1>
           <p class="rate-text px-6 md:px-3 text-sm md:text-base md:mb-14"> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
