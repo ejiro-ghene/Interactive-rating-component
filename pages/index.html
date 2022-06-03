@@ -12,7 +12,7 @@
 <body class="body w-full h-full">
   <main>
     <!-- rating card -->
-    <div class="rating-card max-w-sm m-auto overflow-hidden rounded-2xl w-11/12 md:w-full md:h-full mt-20 md:mt-28">
+    <div id="rateCard" class="rating-card max-w-sm m-auto overflow-hidden rounded-2xl w-11/12 md:w-full md:h-full mt-20 md:mt-28">
       
         <!-- star icon -->
       <img class="star-icon rounded-full shadow-lg py-3 px-3 mx-5 mt-4 md:py-3 md:px-3  md:mx-6 md:mt-8 mb-2 md:mb-5 w-8 md:w-9" src="../images/icon-star.svg" alt="r-icon">
@@ -23,12 +23,12 @@
       <p class="rate-text md:text-sm">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       
       <!-- rating numbers -->
-      <div class=" text-white">
-        <button class="rate-buttons rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" onclick="document.location.href='thankyou.html';">1</button>
-      <button class="rate-buttons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" onclick="document.location.href='thankyou.html';">2</button>
-      <button class="rate-buttons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" onclick="document.location.href='thankyou.html';">3</button>
-      <button class="rate-buttons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" onclick="document.location.href='thankyou.html';">4</button>
-      <button class="rate-buttons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" onclick="document.location.href='thankyou.html';">5</button>
+      <div class="ratings text-white">
+        <button class="rateButtons rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" data-rate="1" onclick="toggleButton()">1</button>
+      <button class="rateButtons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" data-rate="2" onclick="toggleButton()">2</button>
+      <button class="rateButtons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" data-rate="3" onclick="toggleButton()">3</button>
+      <button class="rateButtons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" data-rate="4" onclick="toggleButton()">4</button>
+      <button class="rateButtons  rounded-full text-xs rate-text py-2 px-3 mx-2 mt-7 mb-4 md:py-4 md:px-5 md:mx-2 md:my-5" data-rate="5" onclick="toggleButton()">5</button>
       </div>
     </div>
 
@@ -38,24 +38,50 @@
       </div>
      
       </div>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="attribution mt-20 md:mt-28">
+<div class="attribution mt-20 md:mt-28">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Ukiwe Stephanie</a>.
     </div>
+      <!-- FOOTER -->
+    
+    </div>
+
+    
     
   </main>
-  <!-- Rating state start -->
-
- 
-
-  <!-- Rating state end -->
 
 
-  
-  
+
+
+
+
+
+
+  <!-- thankyou -->
+<section class="thankyou-card" id="thankYou">
+        <div class="thankyouClass  max-w-sm m-auto overflow-hidden rounded-2xl w-11/12 md:w-full md:h-full mt-20 md:mt-28">
+
+          <!-- thank you icon -->
+          <div class="t-img flex justify-center py-10">
+            <img class="w-28 md:w-auto" src="../images/illustration-thank-you.svg" alt="t-icon">
+          </div>
+          
+          <!-- text -->
+          <p class="current_rating rounded-full flex justify-center w-auto mx-16 py-1 md:mx-24 md:py-1"> You selected <span id="rating-value"></span></p>
+
+          <div class="px-5 md:px-6 text-center">
+            <h1 class="font-semibold text-xl md:text-2xl text-white py-4 md:pt-8">Thank you!</h1>
+          <p class="rate-text px-6 md:px-3 text-sm md:text-base md:mb-14"> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="attribution mt-40 md:mt-32">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Ukiwe Stephanie</a>.
+        </div>
+</section>
+
 
 
   <!-- JAVASCRIPT -->

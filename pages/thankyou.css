@@ -1,7 +1,9 @@
-.update {
-    background-color: #7c87981a;
-    color: #fb7413;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+
 
 .thankyou-card {
     background-color: #262e38;

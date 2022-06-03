@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.display{
+    display: none;
+  }
+
 .body {
     background-color: #121417;
 }
@@ -21,11 +25,11 @@
     /* font-size: 0.76rem; */
 }
 
-.rate-buttons {
+.rateButtons {
 background-color: #7c87981a;
 }
 
-.rate-buttons:hover {
+.rateButtons:hover {
 background-color: #fb7413;
 }
 
@@ -48,7 +52,17 @@ background-color: #fb7413;
     color: #fb7413; 
 }
 
+.current_rating {
+    background-color: #7c87981a;
+    color: #fb7413;
+}
 
+
+/* THANK-YOU CARD */
+.thankyouClass {
+    background-color: #262e38;
+    height: 60vh;
+}
 
 /* White: hsl(0, 0%, 100%)
 - Light Grey: hsl(217, 12%, 63%)
