@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 /* /pseudo class */
 .display{
     display: none;
@@ -10,11 +11,12 @@
 
 .body {
     background-color: #121417;
+    font-family: cursive;
 }
 
 .rating-card {
     background-color: #262e38;
-    height: 60vh;
+    height: 70vh;
 }
 
 .star-icon {
@@ -23,6 +25,7 @@
 
 .rate-text {
     color: #959eac;
+    /* font-family: cursive; */
     /* font-size: 0.76rem; */
 }
 
@@ -64,7 +67,7 @@ background-color: #fb7413;
 /* THANK-YOU CARD */
 .thankyouClass {
     background-color: #262e38;
-    height: 60vh;
+    height: 70vh;
 }
 
 /* White: hsl(0, 0%, 100%)

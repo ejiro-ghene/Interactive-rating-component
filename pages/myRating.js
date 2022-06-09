@@ -2,6 +2,7 @@ let thanksCard = document.getElementById("thankYou");
 let rateCard = document.getElementById("rateCard");
 let buttons = document.querySelectorAll(".rateButtons");
 let showValue = document.querySelector("#rating-value");
+let rateSubButton = document.querySelector(".rating-submit");
 // console.log(buttons);
 
 if (thanksCard.classList != "display") {
